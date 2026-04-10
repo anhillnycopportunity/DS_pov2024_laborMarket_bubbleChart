@@ -1,4 +1,4 @@
-YEAR,IndShort,name,POCind,POCind_order,z,Proportion_CW,color,x,y
+YEAR,series,name,POCind,POCind_order,z,Proportion_CW,color,x,y
 2024,1,Extraction/Construction,Low to moderate over-representation of POC workers (-0.5 to 0.5),200,225832,0.050872126,0.043,0.412,69.6
 2024,2,Manufacturing,Low to moderate over-representation of POC workers (-0.5 to 0.5),200,125344,0.028235661,0.029,0.345,100.8
 2024,3,Wholesalers,Low to moderate over-representation of POC workers (-0.5 to 0.5),200,67055,0.015105169,-0.024,0.256,103.2
