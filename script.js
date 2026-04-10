@@ -16,10 +16,6 @@ Highcharts.chart('container', {
         text: 'Test: Representation, industry, wages, job quality...'
     },
 
-    subtitle: {
-        text: 'Source: <a href="http://www.euromonitor.com/">Euromonitor</a> and <a href="https://data.oecd.org/">OECD</a>'
-    },
-
     accessibility: {
         point: {
             valueDescriptionFormat: '{index}. {point.name}, Ratio PT/FT: {point.x}, ' +
