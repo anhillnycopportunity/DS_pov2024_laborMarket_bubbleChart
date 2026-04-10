@@ -1,13 +1,13 @@
-series,name,x,y,z
-0.050872126,Extraction/Construction,0.412,69.6,225832
-0.028235661,Manufacturing,0.345,100.8,125344
-0.015105169,Wholesalers,0.256,103.2,67055
-0.086830784,Retailers,0.733,58,385460
-0.063997888,Transportation & Utilities,0.398,65.7,284100
-0.03926668,Information,0.347,159.3,174313
-0.083954596,Financial,0.188,221.1,372692
-0.161829506,Professional,0.319,142.5,718395
-0.268383399,Education/Health/Human Svcs,0.508,79.6,1191410
-0.10018046,Entertainment Svcs,0.795,55.5,444722
-0.049484717,Other Svcs,0.663,57.4,219673
-0.037805159,International Affairs,0.168,99.9,167825
+name,x,y,z
+Extraction/Construction,0.412,69.6,225832
+Manufacturing,0.345,100.8,125344
+Wholesalers,0.256,103.2,67055
+Retailers,0.733,58,385460
+Transportation & Utilities,0.398,65.7,284100
+Information,0.347,159.3,174313
+Financial,0.188,221.1,372692
+Professional,0.319,142.5,718395
+Education/Health/Human Svcs,0.508,79.6,1191410
+Entertainment Svcs,0.795,55.5,444722
+Other Svcs,0.663,57.4,219673
+International Affairs,0.168,99.9,167825
