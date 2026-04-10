@@ -1,0 +1,13 @@
+YEAR,series,name,POCind,POCind_order,z,Proportion_CW,color,x,y
+2024,1,Extraction/Construction,Low to moderate over-representation of POC workers (-0.5 to 0.5),200,225832,0.050872126,0.043,0.412,69.6
+2024,2,Manufacturing,Low to moderate over-representation of POC workers (-0.5 to 0.5),200,125344,0.028235661,0.029,0.345,100.8
+2024,3,Wholesalers,Low to moderate over-representation of POC workers (-0.5 to 0.5),200,67055,0.015105169,-0.024,0.256,103.2
+2024,4,Retailers,High over-representation of POC workers (Above 0.5),100,385460,0.086830784,0.08,0.733,58
+2024,5,Transportation & Utilities,High over-representation of POC workers (Above 0.5),100,284100,0.063997888,0.222,0.398,65.7
+2024,6,Information,High under-representation of POC workers (Below 0.5),300,174313,0.03926668,-0.295,0.347,159.3
+2024,7,Financial,High under-representation of POC workers (Below 0.5),300,372692,0.083954596,-0.195,0.188,221.1
+2024,8,Professional,High under-representation of POC workers (Below 0.5),300,718395,0.161829506,-0.173,0.319,142.5
+2024,9,Education/Health/Human Svcs,High over-representation of POC workers (Above 0.5),100,1191410,0.268383399,0.069,0.508,79.6
+2024,10,Entertainment Svcs,Low to moderate over-representation of POC workers (-0.5 to 0.5),200,444722,0.10018046,0.037,0.795,55.5
+2024,11,Other Svcs,High over-representation of POC workers (Above 0.5),100,219673,0.049484717,0.078,0.663,57.4
+2024,12,International Affairs,High over-representation of POC workers (Above 0.5),100,167825,0.037805159,0.073,0.168,99.9
