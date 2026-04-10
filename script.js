@@ -1,33 +1,4 @@
-fetch('data.csv')
-  .then(response => response.text())
-  .then(csv => {
-    const lines = csv.split('\n').slice(1); // skip header
-
-    const seriesMap = {};
-
-    lines.forEach(line => {
-      if (!line.trim()) return;
-
-      const [series, name, x, y, z] = line.split(',');
-
-      if (!seriesMap[series]) {
-        seriesMap[series] = [];
-      }
-
-      seriesMap[series].push({
-        name: name,
-        x: parseFloat(x),
-        y: parseFloat(y),
-        z: parseFloat(z)
-      });
-    });
-
-    const series = Object.keys(seriesMap).map(key => ({
-      name: key,
-      data: seriesMap[key]
-    }));
-
-    Highcharts.chart('container', {
+Highcharts.chart('container', {
 
     chart: {
         type: 'bubble',
@@ -132,6 +103,22 @@ fetch('data.csv')
         }
     },
 
-    series: series
+    series: [{
+        data: [
+            { x: .412, y: 69.6, z: 225832, name: 'Extraction/Construction'},
+            { x: .345, y: 100.8, z: 125344, name: 'Manufacturing'},
+            { x: .256, y: 103.2, z: 67055, name: 'Wholesalers'},
+            { x: .733, y: 58, z: 385460, name: 'Retailers'},
+            { x: .398, y: 65.7, z: 284100, name: 'Transportation & Utilities'},
+            { x: .347, y: 159.3, z: 174313, name: 'Information'},
+            { x: .188, y: 221.1, z: 372692, name: 'Financial'},
+            { x: .319, y: 142.5, z: 718395, name: 'Professional'},
+            { x: .508, y: 79.6, z: 1191410, name: 'Education/Health/Human Svcs'},
+            { x: .795, y: 55.5, z: 444722, name: 'Entertainment Svcs'},
+            { x: .663, y: 57.4, z: 219673, name: 'Other Svcs'},
+            { x: .168, y: 99.9, z: 167825, name: 'International Affairs'}
+        ],
+        colorByPoint: true
+    }]
 
 });
