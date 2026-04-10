@@ -1,4 +1,4 @@
-fetch('data.csv')
+fetch('data_v1.csv')
   .then(response => response.text())
   .then(csv => {
     const lines = csv.split('\n').slice(1); // skip header
