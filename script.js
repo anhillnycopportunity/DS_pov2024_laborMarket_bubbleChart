@@ -86,7 +86,7 @@ Highcharts.chart('container', {
     tooltip: {
         useHTML: true,
         headerFormat: '<table>',
-        pointFormat: '<tr><th colspan="2"><h3>{point.name}</h3></th></tr>' +
+        pointFormat: '<tr><th colspan="2"><h3>{series.name}</h3></th></tr>' +
             '<tr><th>Ratio PT/FT:</th><td>{point.x}</td></tr>' +
             '<tr><th>Percent CW:</th><td>{point.y}%</td></tr>' +
             '<tr><th>Workers (Count):</th><td>{point.z}</td></tr>',
