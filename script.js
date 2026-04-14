@@ -145,6 +145,15 @@ Highcharts.chart('container', {
         followPointer: true
     },
 
-        series: series
+    plotOptions: {
+        series: {
+            dataLabels: {
+                enabled: false,
+                format: '{point.name}'
+            }
+        }
+    },
+
+    series: series
 
 });
