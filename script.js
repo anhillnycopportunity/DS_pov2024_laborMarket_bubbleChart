@@ -150,3 +150,7 @@ Highcharts.chart('container', {
     },
 
 });
+ })
+    .catch(err => {
+      console.error(err);
+    });
