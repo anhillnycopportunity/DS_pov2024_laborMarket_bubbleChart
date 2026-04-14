@@ -17,7 +17,7 @@ Highcharts.chart('container', {
     },
 
     subtitle: {
-        text: 'Source: Census Bureau's 2024 American Community Survey Public Use Microdata, as Modified by NYC Opportunity'
+        text: 'Source: Census Bureau 2024 American Community Survey Public Use Microdata, as Modified by NYC Opportunity'
     },
 
     accessibility: {
