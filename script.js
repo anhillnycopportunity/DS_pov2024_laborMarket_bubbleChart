@@ -146,14 +146,6 @@ Highcharts.chart('container', {
     },
 
     plotOptions: {
-        series: {
-            dataLabels: {
-                enabled: false,
-                format: '{point.name}'
-            }
-        }
-    },
-
-    series: series
+        series: series
 
 });
