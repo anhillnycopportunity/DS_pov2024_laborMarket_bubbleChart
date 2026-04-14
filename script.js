@@ -145,7 +145,6 @@ Highcharts.chart('container', {
         followPointer: true
     },
 
-    plotOptions: {
         series: series
 
 });
