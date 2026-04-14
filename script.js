@@ -17,7 +17,7 @@ Highcharts.chart('container', {
     },
 
     subtitle: {
-        text: 'Source: <a href="http://www.euromonitor.com/">Euromonitor</a> and <a href="https://data.oecd.org/">OECD</a>'
+        text: 'Source: Census Bureau's 2024 American Community Survey Public Use Microdata, as Modified by NYC Opportunity'
     },
 
     accessibility: {
@@ -86,7 +86,7 @@ Highcharts.chart('container', {
     tooltip: {
         useHTML: true,
         headerFormat: '<table>',
-        pointFormat: '<tr><th colspan="2"><h3>{point.name}</h3></th></tr>' +
+        pointFormat: '<tr><th colspan="2"><h3>{series.name}</h3></th></tr>' +
             '<tr><th>Ratio PT/FT:</th><td>{point.x}</td></tr>' +
             '<tr><th>Percent CW:</th><td>{point.y}%</td></tr>' +
             '<tr><th>Workers (Count):</th><td>{point.z}</td></tr>',
