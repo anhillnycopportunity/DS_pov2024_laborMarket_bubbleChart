@@ -9,11 +9,15 @@ Highcharts.chart('container', {
     },
 
     legend: {
-        enabled: false
+        enabled: true
     },
 
     title: {
         text: 'Test: Representation, industry, wages, job quality...'
+    },
+
+    subtitle: {
+        text: 'Source: <a href="http://www.euromonitor.com/">Euromonitor</a> and <a href="https://data.oecd.org/">OECD</a>'
     },
 
     accessibility: {
@@ -100,21 +104,66 @@ Highcharts.chart('container', {
     },
 
     series: [{
-        data: [
-            { x: .412, y: 69.6, z: 225832, name: 'Extraction/Construction'},
-            { x: .345, y: 100.8, z: 125344, name: 'Manufacturing'},
-            { x: .256, y: 103.2, z: 67055, name: 'Wholesalers'},
-            { x: .733, y: 58, z: 385460, name: 'Retailers'},
-            { x: .398, y: 65.7, z: 284100, name: 'Transportation & Utilities'},
-            { x: .347, y: 159.3, z: 174313, name: 'Information'},
-            { x: .188, y: 221.1, z: 372692, name: 'Financial'},
-            { x: .319, y: 142.5, z: 718395, name: 'Professional'},
-            { x: .508, y: 79.6, z: 1191410, name: 'Education/Health/Human Svcs'},
-            { x: .795, y: 55.5, z: 444722, name: 'Entertainment Svcs'},
-            { x: .663, y: 57.4, z: 219673, name: 'Other Svcs'},
-            { x: .168, y: 99.9, z: 167825, name: 'International Affairs'}
+      name: 'Extraction/Construction',
+      data: [
+        [.412, 69.6, 225832]
         ],
-        colorByPoint: true
-    }]
+    }, {
+      name: 'Manufacturing',
+      data: [
+        [.345, 100.8, 125344]
+        ],
+    }, {
+      name: 'Wholesalers',
+      data: [
+        [.256, 103.2, 67055]
+        ],
+    }, {
+      name: 'Retailers',
+      data: [
+        [.733, 58, 385460]
+        ],
+    }, {
+      name: 'Transportation & Utilities',
+      data: [
+        [.398, 65.7, 284100]
+        ],
+    }, {
+      name: 'Information',
+      data: [
+        [.347, 159.3, 174313]
+        ],
+    }, {
+      name: 'Financial',
+      data: [
+        [.188, 221.1, 372692]
+        ],
+    }, {
+      name: 'Professional',
+      data: [
+        [.319, 142.5, 718395]
+        ],
+    }, {
+      name: 'Education/Health/Human Svcs',
+      data: [
+        [.508, 79.6, 1191410]
+        ],
+    }, {
+      name: 'Entertainment Svcs',
+      data: [
+        [.795, 55.5, 444722]
+        ],
+    }, {
+      name: 'Other Svcs',
+      data: [
+        [.663, 57.4, 219673]
+        ],
+    }, {
+      name: 'International Affairs',
+      data: [
+        [.168, 99.9, 167825]
+        ],
+    }
+    ]
 
 });
