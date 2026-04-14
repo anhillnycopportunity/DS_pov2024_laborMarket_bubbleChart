@@ -1,3 +1,54 @@
+  // --- 1 + 2: Parse CSV and build series ---
+  function csvToSeries(csv) {
+    const [headerLine, ...lines] = csv.trim().split('\n');
+    const headers = headerLine.split(',').map(h => h.trim());
+
+    const grouped = {};
+
+    lines.forEach(line => {
+      if (!line.trim()) return;
+
+      const values = line.split(',');
+      const row = {};
+
+      headers.forEach((h, i) => {
+        row[h] = values[i]?.trim();
+      });
+
+      const seriesName = row.series;
+
+      if (!grouped[seriesName]) {
+        grouped[seriesName] = [];
+      }
+
+      grouped[seriesName].push({
+        x: Number(row.x),
+        y: Number(row.y),
+        z: Number(row.z),
+        color: row.color,
+        note: row.note
+      });
+    });
+
+    return Object.keys(grouped).map(name => ({
+      name,
+      data: grouped[name]
+    }));
+  }
+
+  // --- 3: Load CSV from file ---
+  fetch('data.csv')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to load data.csv');
+      }
+      return response.text();
+    })
+    .then(csv => {
+      const series = csvToSeries(csv);
+
+// --- 4: Create chart ---
+        
 Highcharts.chart('container', {
 
     chart: {
@@ -103,67 +154,6 @@ Highcharts.chart('container', {
         }
     },
 
-    series: [{
-      name: 'Extraction/Construction',
-      data: [
-        [.412, 69.6, 225832]
-        ],
-    }, {
-      name: 'Manufacturing',
-      data: [
-        [.345, 100.8, 125344]
-        ],
-    }, {
-      name: 'Wholesalers',
-      data: [
-        [.256, 103.2, 67055]
-        ],
-    }, {
-      name: 'Retailers',
-      data: [
-        [.733, 58, 385460]
-        ],
-    }, {
-      name: 'Transportation & Utilities',
-      data: [
-        [.398, 65.7, 284100]
-        ],
-    }, {
-      name: 'Information',
-      data: [
-        [.347, 159.3, 174313]
-        ],
-    }, {
-      name: 'Financial',
-      data: [
-        [.188, 221.1, 372692]
-        ],
-    }, {
-      name: 'Professional',
-      data: [
-        [.319, 142.5, 718395]
-        ],
-    }, {
-      name: 'Education/Health/Human Svcs',
-      data: [
-        [.508, 79.6, 1191410]
-        ],
-    }, {
-      name: 'Entertainment Svcs',
-      data: [
-        [.795, 55.5, 444722]
-        ],
-    }, {
-      name: 'Other Svcs',
-      data: [
-        [.663, 57.4, 219673]
-        ],
-    }, {
-      name: 'International Affairs',
-      data: [
-        [.168, 99.9, 167825]
-        ],
-    }
-    ]
+    series: series
 
 });

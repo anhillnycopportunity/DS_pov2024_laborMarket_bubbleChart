@@ -1,13 +1,13 @@
-name,x,y,z
-Extraction/Construction,0.412,69.6,225832
-Manufacturing,0.345,100.8,125344
-Wholesalers,0.256,103.2,67055
-Retailers,0.733,58,385460
-Transportation & Utilities,0.398,65.7,284100
-Information,0.347,159.3,174313
-Financial,0.188,221.1,372692
-Professional,0.319,142.5,718395
-Education/Health/Human Svcs,0.508,79.6,1191410
-Entertainment Svcs,0.795,55.5,444722
-Other Svcs,0.663,57.4,219673
-International Affairs,0.168,99.9,167825
+"series","x","y","z","color","note"
+"Extraction/Construction",0.411953983334218,0.696378461396255,225832,"#C4E5F0","Rep.Ratio: 0"
+"Manufacturing",0.344609678600536,1.00815118150892,125344,"#D2ECF4","Rep.Ratio: 0"
+"Wholesalers",0.256133325243209,1.03194307683109,67055,"#F7FCCC","Rep.Ratio: 0"
+"Retailers",0.732680597736579,0.579704673174887,385460,"#9DCEE3","Rep.Ratio: 0.1"
+"Transportation & Utilities",0.398361829690922,0.6567510790615,284100,"#313695","Rep.Ratio: 0.2"
+"Information",0.346728359675702,1.59285487622901,174313,"#A50026","Rep.Ratio: -0.3"
+"Financial",0.187987417809616,2.21055623248831,372692,"#F26841","Rep.Ratio: -0.2"
+"Professional",0.319324786357881,1.42472895027818,718395,"#F7834D","Rep.Ratio: -0.2"
+"Education/Health/Human Svcs",0.507662440883802,0.796007303961896,1191410,"#A8D7E7","Rep.Ratio: 0.1"
+"Entertainment Svcs",0.794901598553921,0.555000160132575,444722,"#C9E8F1","Rep.Ratio: 0"
+"Other Svcs",0.663321257221189,0.573676848268978,219673,"#9FCFE3","Rep.Ratio: 0.1"
+"International Affairs",0.168263093117656,0.999342306089007,167825,"#A5D4E6","Rep.Ratio: 0.1"
